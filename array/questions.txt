@@ -1,0 +1,3 @@
+//insert an element at the beg,specific and end of an array
+//matrix sum 
+//

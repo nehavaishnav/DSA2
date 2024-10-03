@@ -1,0 +1,13 @@
+//Implement a queue through array
+//Implement a queue through Linked List
+//Implement a queue through stack(costly enque, costly dequeue)
+//Implement double ended queue
+//Circular queue through array
+//Circular queue through LL
+//Reverse a queue
+//Priority Queue
+
+
+//Circular queue through stack
+//Reverse first K elements of a queue
+//Round Robin Algo

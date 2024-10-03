@@ -1,0 +1,16 @@
+//implement stack using array(static and dma)
+
+//implement stack infix to postfix
+//implement infix to prefix
+//implement postfix to infix 
+//implement prefix to infix
+
+//implement stack using LL
+
+//reverse a given string using stack
+
+//tower of hanoi(recursive and iterartive approach)
+
+//two stack impelementation in an array(2 approaches)
+//multiple stack impleemntation using 1 array
+
