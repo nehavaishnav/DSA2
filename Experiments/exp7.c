@@ -37,6 +37,21 @@ struct node *insertNode(struct node *root) {
 
     return newNode;
 }
+int search(struct node *root, int data) {
+    if (root == NULL) {
+        return 0; 
+    }
+
+    if (root->data == data) {
+        return 1; 
+    }
+
+    if (data > root->data) {
+        return search(root->right, data); 
+    } else {
+        return search(root->left, data); 
+    }
+}
 
 // Preorder traversal
 void preorderTraversal(struct node *root) {
@@ -112,6 +127,9 @@ int main() {
     struct node *root = NULL;
     printf("Building the binary tree...\n");
     root = insertNode(root);
+    
+    int res=search(root,11);
+    printf("%d",res);
 
     printf("\nTree structure (level-order display):\n");
     displayTreeLevelOrder(root);
