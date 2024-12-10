@@ -57,12 +57,11 @@ void preorderTraversal(struct node *root) {
 int main()
 {
     struct node* root= createNode(10);
-    insert(root, 5);
     insert(root, 4);
-    insert(root, 6);
-    insert(root, 20);
-    insert(root, 11);
-    insert(root, 21);
+    insert(root, 2);
+    insert(root, 7);
+    insert(root, 1);
+    insert(root, 3);
     int n;
    printf(" Enter the element to be searched\n3");
    scanf("%d",&n);
@@ -70,11 +69,11 @@ int main()
    preorderTraversal(ans);
 }
 // tree
-//      10
+//      4
 //   /      
-//  5      20
-// / \   /  
-// 4  6  11 21
+//  2     7
+// / \     
+// 1  3 
 
 
 
