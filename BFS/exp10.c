@@ -29,7 +29,7 @@ void bfs(int graph[MAX_NODES][MAX_NODES], int start, int num_nodes) {
     }
     printf("\n");
 }
-//recursion uses stack so this finction makes the use of stack implicitly
+
 // DFS Helper function
 void dfsUtil(int graph[MAX_NODES][MAX_NODES], int node, bool visited[], int num_nodes) {
     visited[node] = true;

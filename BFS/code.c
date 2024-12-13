@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void BFS(int g[][9], int s, int v) {
+void BFS(int g[][5], int s, int v) {
     int q[v];               // Queue for BFS
     int visited[v];         // Visited array to track visited nodes
 
@@ -34,20 +34,16 @@ void BFS(int g[][9], int s, int v) {
 
 int main() {
     // Define a graph as an adjacency matrix (example with 9 nodes)
-    int g[9][9] = {
-        {0, 1, 0, 0, 1, 0, 0, 0, 0},
-        {1, 0, 1, 1, 0, 0, 0, 0, 0},
-        {0, 1, 0, 0, 0, 1, 0, 0, 0},
-        {0, 1, 0, 0, 1, 1, 0, 0, 0},
-        {1, 0, 0, 1, 0, 1, 1, 0, 0},
-        {0, 0, 1, 1, 1, 0, 0, 1, 0},
-        {0, 0, 0, 0, 1, 0, 0, 0, 1},
-        {0, 0, 0, 0, 0, 1, 0, 0, 1},
-        {0, 0, 0, 0, 0, 0, 1, 1, 0}
+    int g[5][5] = {
+      {0, 1, 1, 0, 0},
+{1, 0, 0, 1, 1},
+{1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0},
+{0, 1, 0, 0, 0}
     };
 
     int startNode = 0; // Start BFS from node 0
-    BFS(g, startNode, 9);
+    BFS(g, startNode, 5);
 
     return 0;
 }

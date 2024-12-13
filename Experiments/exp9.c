@@ -56,8 +56,7 @@ void preorderTraversal(struct node *root) {
 }
 int main()
 {
-    struct node* root= createNode(10);
-    insert(root, 4);
+    struct node* root= createNode(4);
     insert(root, 2);
     insert(root, 7);
     insert(root, 1);
